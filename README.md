@@ -1,4 +1,4 @@
-<h1 align="center" style="color: #62389f" >
+<h1 align="center" >
 CONTAGEM REGRESSIVA - TESTE TÉCNICO FINAL LEVEL CO
 </h1>
 
