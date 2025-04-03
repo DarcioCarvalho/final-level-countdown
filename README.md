@@ -1,54 +1,44 @@
-# React + TypeScript + Vite
+<h1 align="center" style="color: #62389f" >
+CONTAGEM REGRESSIVA - TESTE TÉCNICO FINAL LEVEL CO
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="LICENSE"><img  src="https://img.shields.io/static/v1?label=License&message=MIT&color=F7DD43&labelColor=202024" alt="License"></a>
+</p>
 
-Currently, two official plugins are available:
+## 💻 Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Essa aplicação foi desenvolvida como parte de um teste técnico para a __Final Level Co__, cujo objetivo era refatorar um código de contagem regressiva.
 
-## Expanding the ESLint configuration
+O desafio original utilizava o método `setInterval` do JavaScript. Gostei tanto da proposta que resolvi expandir a ideia, criando esta aplicação para demonstrar o mesmo resultado utilizando __tanto__ `setInterval` __quanto__ setTimeout.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Uma das principais preocupações no desenvolvimento foi o gerenciamento eficiente do temporizador, garantindo que ele fosse devidamente __limpo da memória__ para evitar problemas de consumo excessivo de recursos no navegador.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+💡 __Quer ver como foi feito?__
+Confira o código dos componentes _countDownInterval_ e _countDownTimeout_ aqui no repositório do GitHub! 😁
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+[ACESSE A APLICAÇÃO](https://finallevelcountdown.netlify.app/)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ✨ Tecnologia
+
+- [Vite.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+
+
+## 🚀 Como executar
+
+- Instale o [Node.js] na versão 22.14.0 ou inferior(https://nodejs.dev/)
+- Instale os pacotes com `npm i` ou `npm install` .
+- Execute `npm run dev` para iniciar a aplicação web.
+- Acesse `http://localhost:5173/` no seu navegador preferido.
+
+
+## 📝 License
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+<p align="center">
+  Desenvolvido com 🤩 by Dárcio Carvalho
+</p>
